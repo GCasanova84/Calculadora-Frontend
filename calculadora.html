@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Upload Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&family=VT323&display=swap"
+      rel="stylesheet"
+    />
     <!-- Upload Bootstrap CSS v4.6 -->
     <link
       rel="stylesheet"
@@ -18,11 +25,68 @@
   <body>
     <h1 class="text-center my-5">Calculadora Frontend</h1>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-5 mx-auto">
-                <div id="calculadora"></div>
+      <div class="row">
+        <div class="col-10 col-md-6 col-lg-4 mx-auto">
+          <div id="calculadora">
+            <div id="pantalla" class="m-1">0</div>
+            <div id="botones" class="container-fluid">
+              <div class="row">
+                <div class="col-3 p-1">
+                  <div id="num7" class="boton boton-num">7</div>
+                </div>
+                <div class="col-3 p-1">
+                  <div id="num8" class="boton boton-num">8</div>
+                </div>
+                <div class="col-3 p-1">
+                  <div id="num9" class="boton boton-num">9</div>
+                </div>
+                <div class="col-3 p-1">
+                  <div id="mult" class="boton boton-op">*</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3 p-1">
+                  <div id="num4" class="boton boton-num">4</div>
+                </div>
+                <div class="col-3 p-1">
+                  <div id="num5" class="boton boton-num">5</div>
+                </div>
+                <div class="col-3 p-1">
+                  <div id="num6" class="boton boton-num">6</div>
+                </div>
+                <div class="col-3 p-1">
+                  <div id="div" class="boton boton-op">/</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3 p-1">
+                  <div id="num1" class="boton boton-num">1</div>
+                </div>
+                <div class="col-3 p-1">
+                  <div id="num2" class="boton boton-num">2</div>
+                </div>
+                <div class="col-3 p-1">
+                  <div id="num3" class="boton boton-num">3</div>
+                </div>
+                <div class="col-3 p-1">
+                  <div id="mas" class="boton boton-op">+</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3 p-1">
+                  <div id="num0" class="boton boton-num">0</div>
+                </div>
+                <div class="col-6 p-1">
+                  <div id="igual" class="boton boton-op">=</div>
+                </div>
+                <div class="col-3 p-1">
+                  <div id="menos" class="boton boton-op">-</div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Upload JQuery v3.5 -->
     <script

@@ -1,0 +1,36 @@
+.boton {
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #3b3b3b;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 15px 0;
+  text-align: center;
+  user-select: none;
+}
+
+.boton:active {
+  box-shadow: 0 0 1px #3b3b3b;
+}
+
+.boton-num {
+  background-color: #bfbfbf;
+  color: #2e2e2e;
+}
+
+.boton-op {
+  background-color: #387be0;
+  color: white;
+}
+
+#pantalla {
+  background-color: #a7c9ba;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 4px #596962;
+  color: #3d4a45;
+  font-family: "VT323", monospace;
+  font-size: 3.5rem;
+  padding: 0 10px;
+  text-align: right;
+  text-shadow: 2px 2px 4px #596962;
+}
