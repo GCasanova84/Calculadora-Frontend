@@ -47,7 +47,7 @@ $(() => {
       storeVal = storeVal.concat(currVal);
       const result = ops.includes(lastChar(storeVal))
         ? "SYNTAX ERROR!"
-        : storeVal.charAt(0) === "0" && storeVal.charAt(1) === "/"
+        : lastChar(storeVal) === "0" && storeVal.charAt(storeVal.length - 2) === "/"
         ? "INFINITY"
         : eval(storeVal);
       result !== undefined
