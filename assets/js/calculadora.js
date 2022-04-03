@@ -14,7 +14,7 @@ $(() => {
   let opVal = null;
   //Valor inicial en la pantalla es cero
   pant.text("0");
-  //Cada vez que un botón es pulsado se ejecuta la función que hay dentro 
+  //Cada vez que un botón es pulsado se ejecuta la función que hay dentro
   $(".boton").click((e) => {
     const _this = $(e.currentTarget);
     const input = _this.text();
@@ -47,9 +47,12 @@ $(() => {
       storeVal = storeVal.concat(currVal);
       const result = ops.includes(lastChar(storeVal))
         ? "SYNTAX ERROR!"
+        : storeVal.charAt(0) === "0" && storeVal.charAt(1) === "/"
+        ? "INFINITY"
         : eval(storeVal);
-      blink(result);
-      storeVal = result.toString();
+      result !== undefined
+        ? (blink(result), (storeVal = result.toString()))
+        : blink("0");
       currVal = "";
       opVal = null;
     }
